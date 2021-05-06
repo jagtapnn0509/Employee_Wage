@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace EmployeeIsPresentorAbsent
+namespace EmployeeWage
 {
     class Program
     {
