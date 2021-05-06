@@ -6,8 +6,12 @@ namespace EmployeeWage
     {
         public static void Main(string[] args)
         {
-            EmployeeDetails.calculateEmployee("Google", 20, 5, 20);
-            EmployeeDetails.calculateEmployee("TCS", 30, 5, 20);
+            EmployeeDetails google = new EmployeeDetails("Google", 20, 2, 10);
+            EmployeeDetails vipro = new EmployeeDetails("Vipro", 10, 4, 20);
+            google.calculateEmployee();
+            vipro.calculateEmployee();
+            Console.WriteLine(google.toString());
+            Console.WriteLine(vipro.toString());
         }
     }
 }
