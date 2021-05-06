@@ -9,10 +9,11 @@ namespace EmployeeWage
         public const int EMP_RATE_PER_HOUR = 20;
         public const int NUM_OF_WORKING_DAYS = 20;
         public const int MAX_HRS_IN_MONTH = 100;
-        static void Main(string[] args)
+
+        public static void calculateEmployee()
         {
             Console.WriteLine("Welcome to the Employee Wage Computation Program using C#");
-
+            int totalEmpWage = 0;
             int empHrs = 0;
             int totalEmpHrs = 0;
             int totalWorkingDays = 0;
@@ -35,8 +36,12 @@ namespace EmployeeWage
                 }
                 totalEmpHrs += empHrs;
             }
-            int totalEmpWage = totalEmpHrs * EMP_RATE_PER_HOUR;
-            Console.WriteLine("The tatal Employee Wage is :" + totalEmpWage);
+            totalEmpWage = totalEmpHrs * EMP_RATE_PER_HOUR;
+            Console.WriteLine("The total Monthly Employee Wage is :" + totalEmpWage);
+        }
+        public static void Main(string[] args)
+        {
+            calculateEmployee();
         }
     }
 }
